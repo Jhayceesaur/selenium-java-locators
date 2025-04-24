@@ -36,7 +36,7 @@ public class Locators
 		//Link Text Locator --> tagname 'a' means anchor and you can use Link Text as locator
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(2000); //Added this code to give 2 sec wait because the UI has view transition happening
 		//Xpath Locator --> //tagname[@attribute='value']
 		//You can verify your xpath in console using $x('//input[@placeholder="Name"')
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Gon Freecs");
