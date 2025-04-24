@@ -13,7 +13,7 @@ public class AdvancedLocators
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		
-//Id Locator
+		//Id Locator
 		driver.findElement(By.id("inputUsername")).sendKeys("Samplemail123@gmail.com");
 		
 		//Name Locator
